@@ -6,7 +6,7 @@ const {Builder, By, ele, RETURN, setTimeout, Key, until, sendKeys, driver, quit,
     await driver.get('https://tr-tr.facebook.com/');
     await driver.findElement(By.name('email')).sendKeys('E-MAİL');
     //await driver.wait(webdriver.until.elementLocated(webdriver.By.id("logged-in-message")));
-    //const passwordElement = await driver.findElement(By.xpath("[name='pass']"));
+    //const passwordElement = await driver.findElement(By.xpath("input[name='pass']"));
     //await passwordElement.sendKeys('PASSWORD');
     await driver.findElement(By.name('pass')).sendKeys('PASSWORD', Key.RETURN);
     //await driver.findElement(By.xpath('pass')).sendKeys('');
