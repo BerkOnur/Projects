@@ -11,7 +11,6 @@ const {Builder, By, ele, RETURN, setTimeout, Key, until, sendKeys, driver, quit,
     await driver.findElement(By.name('pass')).sendKeys('PASSWORD', Key.RETURN);
     //await driver.findElement(By.xpath('pass')).sendKeys('');
     await (await driver.findElement(By.id('loginbutton'))).click();
-    
 })();
 
 
